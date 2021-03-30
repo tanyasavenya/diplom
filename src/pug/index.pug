@@ -1,0 +1,36 @@
+extends layout/layout
+
+block vars
+    - var pageTitle = 'Главная страница'
+    - var pageBodyClass = 'homepage'
+    - var pageHeaderClass = ''
+
+block content
+     section.first-section 
+        .container 
+            .first-section__top
+                a.first-section__logo(href="#")
+                    img.first-section__img(src="./assets/imgs/logo.png" alt="logo")
+                nav.nav
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#") Home
+                        li.nav__item
+                            a.nav__link(href="#") Product
+                        li.nav__item
+                            a.nav__link.active(href="#") About
+                        li.nav__item
+                            a.nav__link(href="#") Contact
+                .first-section__btn
+                    a(href="#").btn sign up                  
+            .first-section__bottom
+                .first-section__content
+                    h1.first-section__title.h1 Find the Best Solution in Seconds
+                    p.first-section__text If debugging is the process of removing software bugs.
+                    .first-section__btn 
+                        a(href="#").btn get started 
+                    .first-section__btn 
+                        a(href="#").btn try for free
+                    .first-section__img-wrap
+                    img(src="./assets/imgs/screen.png" alt="")
+     section.about-section
